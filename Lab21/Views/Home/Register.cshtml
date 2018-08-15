@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "GCCoffeeShop";
+}
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+    </style>
+
+<h2>Please put the following information to sign up!</h2>
+
+
+
+<form action="/Home/AddUser" method="post">
+    First Name:<br>
+    <input type="text" pattern="[A-Z]{1}[a-zA-Z]{1,}" name="FirstName" required /><br />
+    Last Name:<br>
+    <input type="text" pattern="[A-Z]{1}[a-zA-Z]{1,}" name="LastName"  required /><br />
+    Email:<br>
+    <input type="email" value="email@example.com" name="Email" required /><br />
+    Phone Number:<br>
+    <input type="tel" pattern="\d{3}-\d{3}-\d{4}" value="XXX-XXX-XXXX" name="PhoneNumber" required /><br />
+    Password:<br>
+    <input type="password" name="Password" required /><br />
+    <input type="submit" value="Sign Up!" class="btn-default" />
+
+    
+</form>
+
